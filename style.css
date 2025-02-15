@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --main-bg-color: #3170d2cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure consistent sizing */
+}
+
+body {
+    font-family: "Lato", sans-serif; /* Apply Lato font globally */
+}
+
+header {
+    
+    background-color: var(--main-bg-color); /* Corrected here */
+/*    border: 2px solid red;*/
+}
+nav{
+    display: flex;
+}
+.flipkartlogo{
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+.flipkartlogo img{
+   width:115px;
+   padding: 0.25px; 
+}
+nav ul {
+    height: 38px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 23px;
+}
+
+nav ul li a:hover {
+/*    color: white;*/
+    text-decoration: none;
+    font-weight: bold;
+}
+.Search{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+
+}
+.Search input{
+    height: 27px;
+    width: 420px;
+    border-radius: 8px;
+    margin-left: 22px;
+    padding-left: 20px; /* Make room for the icon */
+    padding-right: 10px; /* Add padding for text to stay away from icon */
+    border: none; /* Optional: Remove border if you want a cleaner look */
+
+}
+.search i {
+    position: absolute;
+    left: 12px; /* Adjust the position */
+    color: white; /* Make the icon white */
+    font-size: 18px; /* Adjust size */
+}
+
+.search::before {
+    content: "\1F50D"; /* Unicode for magnifying glass */
+    position: absolute;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #aaa;
+    left: 10px;
+    top: 50%;
+}
+.slider{
+    margin: 12px auto;
+    width: 98px;
+
+}
+.card{
+    background-color: #bed4dd;
+
+}
+.card items{
+   display: inline-flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+
+
+
+
+
+.container{
+    min-height: calc(100vh - 38px - 12vh);
+}
+
+footer {
+    height: 12vh; 
+    /* Consider changing this to px for more control */
+    
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
